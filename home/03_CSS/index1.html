@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.MenuLevel1 { width: 100px }
+        div.MenuLevel1 > div { background-color: rgb(132, 230, 136); border: solid blue 1px; position: relative; cursor: pointer }
+        div.MenuLevel2 { width: 150px; display: none }
+        div.MenuLevel2 > div { background-color: rgb(255, 91, 173); border: solid blue 1px; cursor: pointer }
+        div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: 80%; top: 90%; z-index: 1 }
+    </style>
+    
+</head>
+<body>
+    <div class='MenuLevel1'>
+        <div>понедельник</div>
+        <div>вторник</div>
+        <div>
+            среда
+            <div class='MenuLevel2'>
+                <div>завтрак</div>
+                <div>обед</div>
+                <div>ужин</div>
+            </div>
+        </div>
+        <div>четверг</div>
+        <div>пятница</div>
+        <div>суббота</div>
+        <div>воскресенье</div>
+    
+    
+    </div>
+</body>
+</html>
